@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>단어 암기장</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div id="countDisplay" class="count-display"></div>
+    <input type="text" id="searchInput" class="search-input" placeholder="" />
+    <button id="favoriteToggle" class="favorite-toggle">⭐</button>
+    <button id="sortToggle" class="sort-toggle">🔤</button>
+    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+  </header>
+
+  <div class="container">
+    <div id="wordList"></div>
+  </div>
+
+  <button id="toggleFormBtn" class="fab">＋</button>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <form id="wordForm" class="form">
+        <h2 id="modalTitle">단어 추가</h2>
+        <input type="text" id="word" placeholder="단어" required />
+        <input type="text" id="eng" placeholder="영문 뜻" required />
+        <input type="text" id="kor" placeholder="한글 뜻" required />
+        <textarea id="example" placeholder="예문" required></textarea>
+        <button type="submit">저장</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -222,3 +222,4 @@ function editWord(index) {
   modalTitle.textContent = "단어 수정";
   modal.classList.remove("hidden");
 }
+
